@@ -8,18 +8,18 @@ public class SpellCircle implements Rune{
 	
 	public Rune[] slots;
 
-	SpellCircle(Spell spell){
+	public SpellCircle(Spell spell){
 		slots = new Rune[spell.slotNum];
 		int i;
 		//String name : spell.SpellComponents
 		for(i = 0; i<spell.SpellComp.length; i++){
-			slots[i] = RuneFactory.get(spell.SpellComp[i]);
+			slots[i] = RuneFactory.getRune(spell.SpellComp[i]);
 		}
 	}
 	
 	@Override
 	public void type() {
-		// TODO Auto-generated method stub
+		System.out.println("Circle");
 	}
 
 	@Override
@@ -31,7 +31,7 @@ public class SpellCircle implements Rune{
 	@Override
 	public void accept(Cast cast) {
 		for(Rune rune: slots){
-			rune.type();
+			cast.visit(rune);
 		}
 		
 	}

@@ -6,7 +6,7 @@ public class Start implements Rune{
 
 	@Override
 	public void type() {
-		System.out.println("earth rune");
+		System.out.println("head rune");
 		
 	}
 

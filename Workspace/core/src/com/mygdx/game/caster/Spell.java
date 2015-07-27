@@ -4,7 +4,8 @@ public class Spell {
 	public int slotNum;
 	public String[] SpellComp;
 	
-	Spell(String[] SpellComp){
+	public Spell(String[] SpellComp){
 		this.SpellComp = SpellComp;
+		this.slotNum = SpellComp.length;
 	}
 }
