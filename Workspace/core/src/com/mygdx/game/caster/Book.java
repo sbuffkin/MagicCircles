@@ -10,4 +10,19 @@ import java.util.HashMap;
  */
 public class Book {
 	HashMap<String, Spell> spellBook;//spellbook consists of spells organized by Name, Spell (class)
+
+	public void store(String title, Spell spell){
+		
+		try{
+			spellBook.put(title, spell);
+		}
+		catch(Error e){
+			System.out.println("Title already in use");
+		}
+		
+	}
+	public Spell fetch(String title){
+		return spellBook.get(title);
+	}
+	
 }
