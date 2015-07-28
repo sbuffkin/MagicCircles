@@ -9,8 +9,8 @@ import com.mygdx.game.ops.Rune;
 public class North implements Rune{
 
 	@Override
-	public void type() {
-		System.out.println("fire rune");
+	public String type() {
+		return("fire");
 		
 	}
 

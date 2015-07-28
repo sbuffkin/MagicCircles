@@ -12,8 +12,8 @@ import com.mygdx.game.ops.Rune;
 public class East implements Rune{
 
 	@Override
-	public void type() {
-		System.out.println("earth rune");
+	public String type() {
+		return("earth");
 		
 	}
 

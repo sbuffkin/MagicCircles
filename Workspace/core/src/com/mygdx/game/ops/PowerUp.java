@@ -5,8 +5,8 @@ import com.mygdx.game.caster.Cast;
 public class PowerUp implements Rune{
 
 	@Override
-	public void type() {
-		System.out.println("power rune");
+	public String type() {
+		return ("power");
 		
 	}
 

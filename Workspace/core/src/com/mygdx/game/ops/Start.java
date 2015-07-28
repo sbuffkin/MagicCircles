@@ -5,8 +5,8 @@ import com.mygdx.game.caster.Cast;
 public class Start implements Rune{
 
 	@Override
-	public void type() {
-		System.out.println("head rune");
+	public String type() {
+		return ("start");
 		
 	}
 

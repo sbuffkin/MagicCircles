@@ -11,8 +11,8 @@ import com.mygdx.game.ops.Rune;
 public class South implements Rune{
 
 	@Override
-	public void type() {
-		System.out.println("water rune");
+	public String type() {
+		return("water");
 		
 	}
 

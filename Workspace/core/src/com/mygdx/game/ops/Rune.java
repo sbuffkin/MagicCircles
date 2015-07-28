@@ -9,9 +9,9 @@ import com.mygdx.game.caster.Cast;
  * 
  */
 public interface Rune {
-
 	
-	public void type();
+	
+	public String type();
 	public void activate();
 	public void accept(Cast cast);
 }

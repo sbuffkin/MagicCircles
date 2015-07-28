@@ -5,8 +5,8 @@ import com.mygdx.game.caster.Cast;
 public class End implements Rune{
 
 	@Override
-	public void type() {
-		System.out.println("end rune");
+	public String type() {
+		return("end");
 		
 	}
 

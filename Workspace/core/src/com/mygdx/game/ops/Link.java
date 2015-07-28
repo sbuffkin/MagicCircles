@@ -13,21 +13,19 @@ public class Link implements Rune{
 	
 	
 	//dunno how this will be used yet so lets just overload it with all dem methods
+	
 	public Link(SpellCircle linked){
 		this.linked = linked;
 	}
 	
-	public Link(Spell subSpell){
-		this.linked = new SpellCircle(subSpell); 
+	/*
+	public Link(Spell spell, int start){
+		this.linked = new SpellCircle(spell, start);
 	}
-	
-	public Link(String[] spellComp){
-		this.linked = new SpellCircle(new Spell(spellComp));
-	}
-	
+	*/
 	@Override
-	public void type() {
-		System.out.print("link");
+	public String type() {
+		return ("link");
 	}
 	@Override
 	public void activate() {

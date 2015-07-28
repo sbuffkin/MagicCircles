@@ -7,7 +7,9 @@ import com.mygdx.game.ops.*;
 public class SpellCircle implements Rune{
 	
 	public Rune[] slots;
-
+	public Rune center;
+	
+	/*
 	public SpellCircle(Spell spell){
 		slots = new Rune[spell.slotNum];
 		int i;
@@ -15,11 +17,31 @@ public class SpellCircle implements Rune{
 		for(i = 0; i<spell.SpellComp.length; i++){
 			slots[i] = RuneFactory.getRune(spell.SpellComp[i]);
 		}
+		this.center = spell.center;
 	}
+	*/
+	
+	public SpellCircle(Spell spell){
+		slots = new Rune[spell.slotNum];
+		int i;
+		for(i = 0; i<slots.length; i++){
+			slots[i] = RuneFactory.getRune(spell.SpellComp[i]);
+		}
+	}
+	/*
+	public SpellCircle(Spell spell, int start){
+		slots = new Rune[spell.slotNum];
+		int i, n;
+		for(i = 0, n = start; i<slots.length; i++, n++){
+			slots[i] = RuneFactory.getRune(spell.SpellComp[n]);
+		}
+	}
+	*/
+	
 	
 	@Override
-	public void type() {
-		System.out.println("Circle");
+	public String type() {
+		return ("circle");
 	}
 
 	@Override
