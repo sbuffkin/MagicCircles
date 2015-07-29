@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.game.base.*;
 import com.mygdx.game.caster.*;
+import com.mygdx.game.datastrct.LinkedList;
 
 public class MagicCircles extends ApplicationAdapter {
 	SpriteBatch batch;
@@ -16,10 +17,14 @@ public class MagicCircles extends ApplicationAdapter {
 	public void create () {
 		//img = new Texture("badlogic.jpg");
 		//batch = new SpriteBatch();
-		String[] comp = {"start","power", "power","power","fire","water","air","end"};
+		//String[] comp = {"start","power", "power","power","fire","water","air","end"};
+
+
+		/*
 		Spell testSpell = new Spell(comp);
 		SpellCircle testCircle = new SpellCircle(testSpell);
 		testCircle.accept(new Cast());
+		*/
 		
 	}
 

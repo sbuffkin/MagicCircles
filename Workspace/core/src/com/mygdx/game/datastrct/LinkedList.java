@@ -41,10 +41,14 @@ public class LinkedList<e> {
 	public node<e> get(int index){
 		int i;
 		node<e> current = head;
-		for(i=0;i<length;i++){
-			current = current.next;
+		if(index <= length-1){
+			for(i=0;i<index;i++){
+				current = current.next;
+			}
+			return current;
 		}
-		return current;
+		return null;
+		
 	}
 	public node<e> getHead(){
 		return head;
@@ -60,6 +64,14 @@ public class LinkedList<e> {
 	}
 	public e getPayload(int index){
 		return(get(index).payload);
+	}
+	
+	public void testlog(){
+		node<e> current = head;
+		while(current != null){
+			System.out.println(current.payload);
+			current = current.next;
+		}
 	}
 
 }

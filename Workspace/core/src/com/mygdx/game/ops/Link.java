@@ -2,7 +2,7 @@ package com.mygdx.game.ops;
 
 import com.mygdx.game.base.SpellCircle;
 import com.mygdx.game.caster.Cast;
-import com.mygdx.game.caster.Spell;
+
 
 /*
  * this type links to a new circle, which can have its own runes contained within it.
@@ -18,11 +18,8 @@ public class Link implements Rune{
 		this.linked = linked;
 	}
 	
-	/*
-	public Link(Spell spell, int start){
-		this.linked = new SpellCircle(spell, start);
-	}
-	*/
+	
+
 	@Override
 	public String type() {
 		return ("link");
