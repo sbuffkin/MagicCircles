@@ -7,7 +7,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.game.base.*;
 import com.mygdx.game.caster.*;
-import com.mygdx.game.datastrct.LinkedList;
+import com.mygdx.game.datastrct.FourTree;
 
 public class MagicCircles extends ApplicationAdapter {
 	SpriteBatch batch;

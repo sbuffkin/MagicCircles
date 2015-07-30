@@ -1,9 +1,12 @@
 package com.mygdx.game.datastrct;
 
-public class node <e>{
+import com.mygdx.game.base.SpellCircle;
 
-	public e payload;
-	public node<e> next = null;
-	public node<e> previous = null;
+public class node{
+
+	public SpellCircle payload;
+	
+	public node[] next = {null,null,null,null};
+	public node previous = null;
 	
 }

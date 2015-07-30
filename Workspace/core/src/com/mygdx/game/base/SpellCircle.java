@@ -25,7 +25,7 @@ public class SpellCircle implements Rune{
 	public SpellCircle(Spell spell){
 		slots = new Rune[spell.slotNum];
 		int i = 0;
-		node<String> current = spell.SpellComp.head;
+		node current = spell.SpellComp.head;
 		while(current.payload != "end"){
 			slots[i] = RuneFactory.getRune(current.payload);
 			if(slots[i].type().equals("link")){
@@ -45,7 +45,7 @@ public class SpellCircle implements Rune{
 		}
 	}
 	*/
-	public node<String> subSpell(){
+	public node subSpell(){
 		
 		return null;
 	}
