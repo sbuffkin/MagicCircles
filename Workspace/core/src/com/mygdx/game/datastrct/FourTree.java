@@ -11,6 +11,11 @@ import com.mygdx.game.base.SpellCircle;
  *	So I'm thinking since the stupid thing doesn't reaaaly have to be generic to begin with I can make a version 
  *	geared specfically towards spell circles because honestly I don't care anymore, thats what its meant to do and
  *  only that anyway. This ain't going in any other projects.
+ *  
+ *  
+ *  
+ *  
+ *  Trees integers grow downwards
  *
  */
 

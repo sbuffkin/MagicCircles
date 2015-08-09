@@ -8,5 +8,6 @@ public class node{
 	
 	public node[] next = {null,null,null,null};
 	public node previous = null;
+	public int index;
 	
 }
